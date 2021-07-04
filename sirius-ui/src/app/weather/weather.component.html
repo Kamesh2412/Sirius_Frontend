@@ -1,0 +1,32 @@
+<div class="weather">
+    <div class="tr-header" style="width: 100%;">
+    <h2 style="padding-right:1200px">THE WEATHER CHANNEL</h2>
+    </div>
+    <table cellspacing="0" cellpadding="0">
+        <!-- <tr>
+            <th><i class="fas fa-cloud-sun"></i></th>
+        </tr> -->
+        <colgroup>
+            <col span="1" style="width: 25%; background-color: #0D7E88;">
+            <col span="1" style="width: 25%; background-color:  #D09378;">
+            <col span="1" style="width: 25%; background-color: #405B5D;">
+            <col span="1" style="width: 25%; background-color: #74A748;">
+         </colgroup>
+         
+            <tr *ngFor="let data of weather" class="textStyle"style="font-size: 2em;">
+                <td *ngFor="let res of data">{{res.city}}</td>
+            </tr>
+            <tr *ngFor="let data of weather">
+                <td *ngFor="let res of data">
+                    <div class="column" style="padding-bottom: 15px;"><img src="/assets/img/icon-party-sunny.svg" alt="image"></div>
+                </td>
+            </tr>
+            <tr *ngFor="let data of weather" class="textStyle" style="font-size: 3.5em;">
+                <td *ngFor="let res of data">{{res.temp_Celsius}}°C</td>
+            </tr>
+            <!-- <tr *ngFor="let data of weather">
+                <td *ngFor="let res of data">{{res.temp_Fahr}}</td>
+            </tr> -->
+      </table>
+    <!-- <p class="textStyle">Tripzone&nbsp;&nbsp;&nbsp;MainOffices&nbsp;&nbsp;&nbsp;SubOffices&nbsp;&nbsp;&nbsp;Disclaimer</p> -->
+</div>

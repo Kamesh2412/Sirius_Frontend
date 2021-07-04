@@ -1,0 +1,28 @@
+<div>
+        <app-header></app-header>
+
+
+    <div class="topnav">
+        <h2><a [routerLink]="['/getQuote']">GET QUOTE</a></h2>
+        <h2><a href="#news">DESTINATION</a></h2>
+        <h2><a [routerLink]="['/weather']">WEATHER</a></h2>
+    </div>
+    <div class="row">
+        <div class="column" style="padding-left: 100px; padding-bottom: 15px;"><img src="/assets/img/welcome-image.svg" alt="image"></div>
+        <div class="column" style="padding-left: 200px;">
+            <h1 class="textSpace">Life is Short and the world is wide!</h1>
+            <h4>Stay at the comfort of your homes and book a trip to travel after the post pandemic era.</h4>
+            <button class="buttonColor">PLAN A TRIP</button>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="promo">
+        <img src="/assets/img/promo-image.png" style="width: 100%;" alt="image">
+        <div class="bottom-left">PLAN A TRIP
+        <br>
+        Make your Vacation the most
+        memorable one.
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

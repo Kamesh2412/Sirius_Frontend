@@ -1,0 +1,120 @@
+.column {
+    float: left;
+    width: auto;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .promo {
+    position: relative;
+  text-align: center;
+  color: white;
+  }
+
+.textSpace {
+    padding-top:120px ;
+    font-weight: bolder;
+    //font-size: large;
+}
+
+.buttonColor{
+    background-image: linear-gradient(to right, black, darkblue);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+    width: 130px;
+}
+
+.topnav {
+  background-color:white;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 56px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: rgb(16, 16, 85); 
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 120px;
+  left: 10px;
+  font-size: 7ex;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        float: left;
+        width: auto;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .promo {
+        width: auto;
+      }
+    .textSpace {
+        padding-top:120px ;
+        font-weight: bolder;
+        //font-size: large;
+    }
+    
+    .buttonColor{
+        background-image: linear-gradient(to right, black, darkblue);
+        color: white;
+        text-align: center;
+        border-radius: 12px;
+        padding: 15px;
+        width: 130px;
+    }
+
+    .topnav {
+      background-color:white;
+      overflow: hidden;
+    }
+    
+    .topnav a {
+      float: right;
+      color: black;
+      text-align: center;
+      padding: 14px 56px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: 'Roboto';
+      font-weight: 500;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: white;
+    }
+    
+    .topnav a.active {
+      background-color: rgb(16, 16, 85); 
+      color: white;
+    }
+}
+

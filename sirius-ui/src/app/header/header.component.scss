@@ -1,0 +1,35 @@
+
+.header{
+    text-align: center;
+    background-image: linear-gradient(to right, black, darkblue);
+    padding: 10px;
+    width: 1244px;
+    font-family: 'Roboto';
+}
+
+.textStyle{
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .header{
+        text-align: center;
+        background-image: linear-gradient(to right, black, darkblue);
+        padding: 10px;
+        width: auto;
+        font-family: 'Roboto';
+        grid-column: span 12;
+    }
+}
+
+.timer {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    color:white;
+  }
+  .timer span {
+    font-size: 2em;
+    margin: 0 3px 0 15px;
+  }
